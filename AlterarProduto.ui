@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>368</width>
+    <height>448</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: pink;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lb_titulo">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>10</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Alterar Produto</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="txt_NomeProduto">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>80</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+font-size:14pt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_produto">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>85</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Produto:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_quantidade">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Quantidade:</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="txt_Quantidade">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>140</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+font-size:14pt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_cadastrar">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>330</y>
+      <width>111</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #5AEB5B;
+font-family: verdana;
+border: 1px solid;
+font-size: 11pt;</string>
+    </property>
+    <property name="text">
+     <string>Cadastrar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_categoria">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>200</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Categoria:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_categoria_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>260</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Preço:</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="txt_categoria_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>260</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+font-size:14pt;</string>
+    </property>
+    <property name="plainText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listItem">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>200</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+font-size:14pt;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Higiene</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Alimento</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>frios e laticínios</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Brinquedo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Enlatados</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Bebidas</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Açougue</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Outros</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="btn_deletar">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>330</y>
+      <width>111</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #DB6E79;
+font-family: verdana;
+border: 1px solid;
+font-size: 11pt;</string>
+    </property>
+    <property name="text">
+     <string>Deletar</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>368</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>514</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: pink;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>60</y>
+      <width>601</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+font-size: 11pt;</string>
+    </property>
+    <row>
+     <property name="text">
+      <string>New Row</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Código</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Produto</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Quantidade</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Categoria</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Preço</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="0" column="2">
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="0" column="3">
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="0" column="4">
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsEnabled</set>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>390</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 20pt;
+font-family: Arial sans-serif;</string>
+    </property>
+    <property name="text">
+     <string>PRODUTOS</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="EditTextPesquisa">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>631</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+font-size: 14pt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BtnAtualiza">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>390</y>
+      <width>121</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">BACKGROUND-COLOR: #75F57C;
+font-size: 15pt</string>
+    </property>
+    <property name="text">
+     <string>Atualizar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BtnDeleta">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>390</y>
+      <width>121</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: red;
+font-size: 15pt;</string>
+    </property>
+    <property name="text">
+     <string>Deletar</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionBuscar"/>
+   <addaction name="actionCadastrar"/>
+   <addaction name="actionAtualizar"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSobre">
+    <property name="title">
+     <string>Sobre</string>
+    </property>
+   </widget>
+   <addaction name="menuSobre"/>
+  </widget>
+  <action name="actionCadastrar">
+   <property name="icon">
+    <iconset resource="img/imagePrincipal.qrc">
+     <normaloff>:/Icons/iconCadastro/add.png</normaloff>:/Icons/iconCadastro/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cadastrar</string>
+   </property>
+  </action>
+  <action name="actionAtualizar">
+   <property name="icon">
+    <iconset resource="img/imagePrincipal.qrc">
+     <normaloff>:/Icons/iconCadastro/refresh.png</normaloff>:/Icons/iconCadastro/refresh.png</iconset>
+   </property>
+   <property name="text">
+    <string>Atualizar</string>
+   </property>
+  </action>
+  <action name="actionBuscar">
+   <property name="icon">
+    <iconset resource="img/imagePrincipal.qrc">
+     <normaloff>:/Icons/iconCadastro/buscar.png</normaloff>:/Icons/iconCadastro/buscar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Buscar</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="img/imagePrincipal.qrc"/>
+ </resources>
+ <connections/>
+</ui>
